@@ -16,4 +16,4 @@
 # /fuel/packages/parser/
 
 # dynamically generated files
-log.txt
+.gitignore
