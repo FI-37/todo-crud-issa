@@ -1,2 +1,2 @@
 # todo-crud-issa
-Littlw TODO application for the web
+Little TODO application for the web
