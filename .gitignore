@@ -17,3 +17,4 @@
 
 # dynamically generated files
 .gitignore
+log.txt

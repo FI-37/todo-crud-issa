@@ -7,12 +7,14 @@
 </head>
 <body>
     <h1>TODO Liste</h1>
-    <ul id="todo-list">
-        <!-- TODO items will be inserted here dynamically -->
-    </ul>
- 
- 
+    
+    <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Neues To-Do" required>
+        <button type="submit">Hinzufügen</button>
+    </form>
+
+    <ul id="todo-list"></ul>
+
     <script src="todo.js"></script>
 </body>
 </html>
- 
