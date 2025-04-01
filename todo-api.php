@@ -74,9 +74,21 @@ switch ($_SERVER['REQUEST_METHOD']) {
         break;
     
     case 'PUT':
-        // TODO-Update-Logik (nicht implementiert)
-        break;
-
+            $data = json_decode(file_get_contents('php://input'), true);
+            if (!isset($data['id'])) {
+                echo json_encode(['error' => 'ID fehlt']);
+                break;
+            }
+            try {
+                $statement = $pdo->prepare("UPDATE todo SET completed = 1 WHERE id = :id");
+                $statement->execute(['id' => $data['id']]);
+                echo json_encode(['status' => 'success']);
+            } catch (Exception $e) {
+                error_log("Fehler beim Aktualisieren: " . $e->getMessage());
+                echo json_encode(['error' => 'Fehler beim Aktualisieren']);
+            }
+            break;
+        
         case 'DELETE':
             $data = json_decode(file_get_contents('php://input'), true);
             if (!isset($data['id'])) {
