@@ -77,35 +77,22 @@ switch ($_SERVER['REQUEST_METHOD']) {
         // TODO-Update-Logik (nicht implementiert)
         break;
 
-    case 'DELETE':
-        // Daten aus dem Input Stream holen
-        $data = json_decode(file_get_contents('php://input'), true);
-        
-        if (!$data || !isset($data['id'])) {
-            // Wenn die Daten ungültig sind, gebe eine Fehlerantwort zurück
-            echo json_encode(['error' => 'Ungültige ID']);
-            break;
-        }
-
-        // Todo aus der Liste löschen
-        try {
-            $statement = $pdo->prepare("DELETE FROM todo WHERE id = :id");
-            $statement->execute(['id' => $data['id']]);
-
-            // Überprüfen, ob die Zeile erfolgreich gelöscht wurde
-            if ($statement->rowCount() > 0) {
-                echo json_encode(['status' => 'success']);
-            } else {
-                echo json_encode(['status' => 'failed', 'message' => 'Element nicht gefunden']);
+        case 'DELETE':
+            $data = json_decode(file_get_contents('php://input'), true);
+            if (!isset($data['id'])) {
+                echo json_encode(['error' => 'Ungültige ID']);
+                break;
             }
-            
-            // Löschen in das Log schreiben
-            write_log("DELETE", $data);
-        } catch (Exception $e) {
-            // Fehlerprotokollierung im Falle eines Problems
-            error_log("Fehler beim Löschen der To-Do: " . $e->getMessage());
-            echo json_encode(['error' => 'Fehler beim Löschen der To-Do']);
-        }
-        break;
+            try {
+                $statement = $pdo->prepare("DELETE FROM todo WHERE id = :id");
+                $statement->execute(['id' => $data['id']]);
+                echo json_encode(['status' => 'success']);
+                write_log("DELETE", $data);
+            } catch (Exception $e) {
+                error_log("Fehler beim Löschen: " . $e->getMessage());
+                echo json_encode(['error' => 'Fehler beim Löschen']);
+            }
+            break;
+        
 }
 ?>
