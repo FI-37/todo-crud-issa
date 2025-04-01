@@ -31,15 +31,6 @@ function write_log($action, $data) {
     fclose($log);
 }
 
-$todo_file = 'todo.json';  // Definiere den Pfad der JSON-Datei
-
-// Lade die existierenden Todos, falls vorhanden
-if (file_exists($todo_file)) {
-    $todo_items = json_decode(file_get_contents($todo_file), true);
-} else {
-    $todo_items = [];  // Initialisiere ein leeres Array, wenn keine Datei existiert
-}
-
 switch ($_SERVER['REQUEST_METHOD']) {
     case 'GET':
         try {
@@ -67,9 +58,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $new_todo = ["id" => uniqid(), "title" => $data['title']];
         // Das neue Element zur Todo-Liste hinzufügen
         $todo_items[] = $new_todo;
-        // Die To-Do-Items in die JSON-Datei schreiben
-        file_put_contents($todo_file, json_encode($todo_items));
-        // Das neue Element zurückgeben
+        // Die To-Do-Items in die JSON-Datei schreiben        // Das neue Element zurückgeben
         echo json_encode($new_todo);
         break;
     
