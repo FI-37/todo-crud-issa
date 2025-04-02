@@ -61,8 +61,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         // Die To-Do-Items in die JSON-Datei schreiben        // Das neue Element zurückgeben
         echo json_encode($new_todo);
         break;
-    
-    case 'PUT':
+        case 'PUT':
             $data = json_decode(file_get_contents('php://input'), true);
             if (!isset($data['id'])) {
                 echo json_encode(['error' => 'ID fehlt']);
@@ -86,7 +85,8 @@ switch ($_SERVER['REQUEST_METHOD']) {
                     // Wenn die Daten ungültig sind, gebe eine Fehlerantwort zurück
                     echo json_encode(['error' => 'Ungültige ID']);
                     break;
-                }
+                }    
+
         
                 // Todo aus der Liste löschen
                 try {
