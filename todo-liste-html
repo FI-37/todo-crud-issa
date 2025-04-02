@@ -4,19 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO Liste</title>
-    <!-- Favicon verhindern, falls nicht vorhanden -->
-    <link rel="icon" href="data:,">
 </head>
 <body>
     <h1>TODO Liste</h1>
-    
+
+    <!-- Formular für das Hinzufügen von Aufgaben -->
     <form id="todo-form">
-        <input type="text" id="todo-input" placeholder="Neues To-Do" required>
+        <input type="text" id="todo-input" placeholder="Neue Aufgabe hinzufügen" aria-label="Neue Aufgabe">
         <button type="submit">Hinzufügen</button>
     </form>
 
-    <ul id="todo-list"></ul>
+    <ul id="todo-list">
+        <!-- TODO items werden hier dynamisch eingefügt -->
+    </ul>
+
+    <!-- Formular zum Bearbeiten einer Aufgabe -->
+    <form id="todo-update-form" style="display: none;">
+        <input type="hidden" id="todo-id">
+        <input type="text" id="todo-update-input" aria-label="Update der Aufgabe">
+        <button type="submit">Update</button>
+    </form>
 
     <script src="todo.js"></script>
+    <script>
+        // Verhindert das Standardformularverhalten (Seitenneuladen) bei Absenden
+        document.getElementById('todo-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Deine Logik zum Hinzufügen einer neuen Aufgabe
+        });
+
+        // Formular zum Aktualisieren der Aufgabe (falls nötig)
+        document.getElementById('todo-update-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Deine Logik zum Aktualisieren einer Aufgabe
+        });
+    </script>
 </body>
 </html>
