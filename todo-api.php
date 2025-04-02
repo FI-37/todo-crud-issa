@@ -1,6 +1,5 @@
 <?php
 header('Content-Type: application/json');
-
 // MySQL-Datenbankverbindungsinformationen
 $host = '127.0.0.1';
 $db = 'todo_list';
@@ -31,6 +30,8 @@ function write_log($action, $data) {
     fclose($log);
 }
 
+
+
 switch ($_SERVER['REQUEST_METHOD']) {
     case 'GET':
         try {
@@ -58,55 +59,56 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $new_todo = ["id" => uniqid(), "title" => $data['title']];
         // Das neue Element zur Todo-Liste hinzufügen
         $todo_items[] = $new_todo;
-        // Die To-Do-Items in die JSON-Datei schreiben        // Das neue Element zurückgeben
+        // Das neue Element zurückgeben
         echo json_encode($new_todo);
         break;
-        case 'PUT':
-            $data = json_decode(file_get_contents('php://input'), true);
-            if (!isset($data['id'])) {
-                echo json_encode(['error' => 'ID fehlt']);
-                break;
-            }
-            try {
-                $statement = $pdo->prepare("UPDATE todo SET completed = 1 WHERE id = :id");
-                $statement->execute(['id' => $data['id']]);
-                echo json_encode(['status' => 'success']);
-            } catch (Exception $e) {
-                error_log("Fehler beim Aktualisieren: " . $e->getMessage());
-                echo json_encode(['error' => 'Fehler beim Aktualisieren']);
-            }
-            break;
-        
-            case 'DELETE':
-                // Daten aus dem Input Stream holen
+    
+     case 'PUT':
                 $data = json_decode(file_get_contents('php://input'), true);
-                
-                if (!$data || !isset($data['id'])) {
-                    // Wenn die Daten ungültig sind, gebe eine Fehlerantwort zurück
-                    echo json_encode(['error' => 'Ungültige ID']);
+                if (!isset($data['id'])) {
+                    echo json_encode(['error' => 'ID fehlt']);
                     break;
-                }    
-
-        
-                // Todo aus der Liste löschen
+                }
                 try {
-                    $statement = $pdo->prepare("DELETE FROM todo WHERE id = :id");
+                    $statement = $pdo->prepare("UPDATE todo SET completed = 1 WHERE id = :id");
                     $statement->execute(['id' => $data['id']]);
-        
-                    // Überprüfen, ob die Zeile erfolgreich gelöscht wurde
-                    if ($statement->rowCount() > 0) {
-                        echo json_encode(['status' => 'success']);
-                    } else {
-                        echo json_encode(['status' => 'failed', 'message' => 'Element nicht gefunden']);
-                    }
-                    
-                    // Löschen in das Log schreiben
-                    write_log("DELETE", $data);
+                    echo json_encode(['status' => 'success']);
                 } catch (Exception $e) {
-                    // Fehlerprotokollierung im Falle eines Problems
-                    error_log("Fehler beim Löschen der To-Do: " . $e->getMessage());
-                    echo json_encode(['error' => 'Fehler beim Löschen der To-Do']);
+                    error_log("Fehler beim Aktualisieren: " . $e->getMessage());
+                    echo json_encode(['error' => 'Fehler beim Aktualisieren']);
                 }
                 break;
+            
+
+    case 'DELETE':
+        // Daten aus dem Input Stream holen
+        $data = json_decode(file_get_contents('php://input'), true);
+        
+        if (!$data || !isset($data['id'])) {
+            // Wenn die Daten ungültig sind, gebe eine Fehlerantwort zurück
+            echo json_encode(['error' => 'Ungültige ID']);
+            break;
         }
+
+        // Todo aus der Liste löschen
+        try {
+            $statement = $pdo->prepare("DELETE FROM todo WHERE id = :id");
+            $statement->execute(['id' => $data['id']]);
+
+            // Überprüfen, ob die Zeile erfolgreich gelöscht wurde
+            if ($statement->rowCount() > 0) {
+                echo json_encode(['status' => 'success']);
+            } else {
+                echo json_encode(['status' => 'failed', 'message' => 'Element nicht gefunden']);
+            }
+            
+            // Löschen in das Log schreiben
+            write_log("DELETE", $data);
+        } catch (Exception $e) {
+            // Fehlerprotokollierung im Falle eines Problems
+            error_log("Fehler beim Löschen der To-Do: " . $e->getMessage());
+            echo json_encode(['error' => 'Fehler beim Löschen der To-Do']);
+        }
+        break;
+}
 ?>
