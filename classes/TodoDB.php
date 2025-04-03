@@ -39,6 +39,12 @@ class TodoDB {
         return $todo_items;
     }
 
+    public function addTodo($title) {
+        $statement = $this->connection->prepare(
+            "INSERT INTO todo (title, completed) VALUES (:title, :completed)");
+        $statement->execute(['title' => $title, 'completed' => 0]);
+    }
+
 }
 
 ?>
