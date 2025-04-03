@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const getCompleteButton = item => {
         const completeButton = document.createElement('button');
-        completeButton.textContent = item.completed ? 'Erledigt' : 'JUST DO IT';
+        completeButton.textContent = item.completed ? 'Nicht erledigt' : 'Erledigt';
 
         completeButton.addEventListener('click', function() {
             fetch(apiUrl, {
