@@ -63,17 +63,26 @@ class TodoDB {
             ['title' => $title, 'completed' => 0]
         );
     }
-    public function setCompleted($id, $completed) {#
-        $statement = $this->connection->prepare(
-            "UPDATE todo SET completed = :completed WHERE id = :id");
-        $statement->execute(["id" => $id, "completed" => $completed]);
+    public function setCompleted($id, $completed) {
+        $this->prepareExecuteStatement(
+            "UPDATE todo SET completed = :completed WHERE id = :id",
+            ['id' => $id, 'completed' => $completed]
+        );
     }
+    
     public function updateTitle($id, $title) {
         $this->prepareExecuteStatement(
             "UPDATE todo SET title = :title WHERE id = :id",
             ['id' => $id, 'title' => $title]
         );
     }
+    public function deleteTodo($id) {
+        $this->prepareExecuteStatement(
+            "DELETE FROM todo WHERE id = :id",
+            ['id' => $id]
+        );
+    }
+    
     
 
 }

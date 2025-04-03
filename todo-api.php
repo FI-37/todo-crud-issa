@@ -48,10 +48,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
     case 'DELETE':
         // Get data from the input stream.
         $data = json_decode(file_get_contents('php://input'), true);
-
-        // Delete todo item from the database.
-        $statement = $pdo->prepare("DELETE FROM todo WHERE id = :id");
-        $statement->execute(["id" => $data["id"]]);
+        $todoDB->deleteTodo($data['id']);
 
         // Tell the client the success of the operation.
         echo json_encode(['status' => 'success']);
