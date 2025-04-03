@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO Liste</title>
+    <link rel="stylesheet" href="todo.css">  <!-- Hier wird die CSS-Datei eingebunden -->
+
 </head>
 <body>
     <h1>TODO Liste</h1>

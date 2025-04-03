@@ -54,3 +54,314 @@
 2025-04-03 09:24:29 - HINT: "connection established"
 2025-04-03 09:24:29 - HINT: "connection established"
 2025-04-03 09:24:29 - HINT: "connection established"
+2025-04-03 18:50:45 - HINT: "connection established"
+2025-04-03 18:50:45 - HINT: "connection established"
+2025-04-03 18:50:45 - SQL: "SELECT * FROM todo"
+2025-04-03 18:50:45 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":1},{"id":8,"uid":"a","title":"Einkaufen","completed":1},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1},{"id":11,"uid":"b","title":"Lernen","completed":0}]
+2025-04-03 18:50:47 - HINT: "connection established"
+2025-04-03 18:50:47 - HINT: "connection established"
+2025-04-03 18:50:47 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 18:50:47 - PUT: {"id":7,"completed":0}
+2025-04-03 18:50:47 - HINT: "connection established"
+2025-04-03 18:50:47 - HINT: "connection established"
+2025-04-03 18:50:47 - SQL: "SELECT * FROM todo"
+2025-04-03 18:50:47 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"Einkaufen","completed":1},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1},{"id":11,"uid":"b","title":"Lernen","completed":0}]
+2025-04-03 18:50:48 - HINT: "connection established"
+2025-04-03 18:50:48 - HINT: "connection established"
+2025-04-03 18:50:48 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 18:50:48 - PUT: {"id":7,"completed":1}
+2025-04-03 18:50:48 - HINT: "connection established"
+2025-04-03 18:50:48 - HINT: "connection established"
+2025-04-03 18:50:48 - SQL: "SELECT * FROM todo"
+2025-04-03 18:50:48 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":1},{"id":8,"uid":"a","title":"Einkaufen","completed":1},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1},{"id":11,"uid":"b","title":"Lernen","completed":0}]
+2025-04-03 18:50:48 - HINT: "connection established"
+2025-04-03 18:50:48 - HINT: "connection established"
+2025-04-03 18:50:48 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 18:50:48 - PUT: {"id":7,"completed":0}
+2025-04-03 18:50:48 - HINT: "connection established"
+2025-04-03 18:50:48 - HINT: "connection established"
+2025-04-03 18:50:48 - SQL: "SELECT * FROM todo"
+2025-04-03 18:50:48 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"Einkaufen","completed":1},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1},{"id":11,"uid":"b","title":"Lernen","completed":0}]
+2025-04-03 18:50:50 - HINT: "connection established"
+2025-04-03 18:50:50 - HINT: "connection established"
+2025-04-03 18:50:50 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 18:50:50 - PUT: {"id":8,"completed":0}
+2025-04-03 18:50:50 - HINT: "connection established"
+2025-04-03 18:50:50 - HINT: "connection established"
+2025-04-03 18:50:50 - SQL: "SELECT * FROM todo"
+2025-04-03 18:50:50 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"Einkaufen","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1},{"id":11,"uid":"b","title":"Lernen","completed":0}]
+2025-04-03 18:50:50 - HINT: "connection established"
+2025-04-03 18:50:50 - HINT: "connection established"
+2025-04-03 18:50:50 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 18:50:50 - PUT: {"id":8,"completed":1}
+2025-04-03 18:50:50 - HINT: "connection established"
+2025-04-03 18:50:50 - HINT: "connection established"
+2025-04-03 18:50:50 - SQL: "SELECT * FROM todo"
+2025-04-03 18:50:50 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"Einkaufen","completed":1},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1},{"id":11,"uid":"b","title":"Lernen","completed":0}]
+2025-04-03 18:50:52 - HINT: "connection established"
+2025-04-03 18:50:52 - HINT: "connection established"
+2025-04-03 18:50:52 - SQL: "UPDATE todo SET title = :title WHERE id = :id"
+2025-04-03 18:50:52 - PUT: {"id":8,"title":"Einkaufen"}
+2025-04-03 18:50:52 - HINT: "connection established"
+2025-04-03 18:50:52 - HINT: "connection established"
+2025-04-03 18:50:52 - SQL: "SELECT * FROM todo"
+2025-04-03 18:50:52 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"Einkaufen","completed":1},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1},{"id":11,"uid":"b","title":"Lernen","completed":0}]
+2025-04-03 18:51:04 - HINT: "connection established"
+2025-04-03 18:51:04 - HINT: "connection established"
+2025-04-03 18:51:04 - SQL: "UPDATE todo SET title = :title WHERE id = :id"
+2025-04-03 18:51:04 - PUT: {"id":"8","title":"schwemen"}
+2025-04-03 18:51:04 - HINT: "connection established"
+2025-04-03 18:51:04 - HINT: "connection established"
+2025-04-03 18:51:04 - SQL: "SELECT * FROM todo"
+2025-04-03 18:51:04 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"schwemen","completed":1},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1},{"id":11,"uid":"b","title":"Lernen","completed":0}]
+2025-04-03 18:51:11 - HINT: "connection established"
+2025-04-03 18:51:11 - HINT: "connection established"
+2025-04-03 18:51:11 - SQL: "UPDATE todo SET title = :title WHERE id = :id"
+2025-04-03 18:51:11 - PUT: {"id":8,"title":"schwemen"}
+2025-04-03 18:51:11 - HINT: "connection established"
+2025-04-03 18:51:11 - HINT: "connection established"
+2025-04-03 18:51:11 - SQL: "SELECT * FROM todo"
+2025-04-03 18:51:11 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"schwemen","completed":1},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1},{"id":11,"uid":"b","title":"Lernen","completed":0}]
+2025-04-03 18:51:11 - HINT: "connection established"
+2025-04-03 18:51:11 - HINT: "connection established"
+2025-04-03 18:51:11 - SQL: "UPDATE todo SET title = :title WHERE id = :id"
+2025-04-03 18:51:11 - PUT: {"id":8,"title":"schwemen"}
+2025-04-03 18:51:11 - HINT: "connection established"
+2025-04-03 18:51:11 - HINT: "connection established"
+2025-04-03 18:51:11 - SQL: "SELECT * FROM todo"
+2025-04-03 18:51:11 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"schwemen","completed":1},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1},{"id":11,"uid":"b","title":"Lernen","completed":0}]
+2025-04-03 18:51:23 - HINT: "connection established"
+2025-04-03 18:51:23 - HINT: "connection established"
+2025-04-03 18:51:23 - SQL: "UPDATE todo SET title = :title WHERE id = :id"
+2025-04-03 18:51:23 - PUT: {"id":"8","title":"New"}
+2025-04-03 18:51:23 - HINT: "connection established"
+2025-04-03 18:51:23 - HINT: "connection established"
+2025-04-03 18:51:23 - SQL: "SELECT * FROM todo"
+2025-04-03 18:51:23 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":1},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1},{"id":11,"uid":"b","title":"Lernen","completed":0}]
+2025-04-03 18:51:29 - HINT: "connection established"
+2025-04-03 18:51:29 - HINT: "connection established"
+2025-04-03 18:51:29 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 18:51:29 - PUT: {"id":8,"completed":0}
+2025-04-03 18:51:29 - HINT: "connection established"
+2025-04-03 18:51:29 - HINT: "connection established"
+2025-04-03 18:51:29 - SQL: "SELECT * FROM todo"
+2025-04-03 18:51:29 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1},{"id":11,"uid":"b","title":"Lernen","completed":0}]
+2025-04-03 18:53:09 - HINT: "connection established"
+2025-04-03 18:53:09 - HINT: "connection established"
+2025-04-03 18:53:09 - SQL: "SELECT * FROM todo"
+2025-04-03 18:53:09 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1},{"id":11,"uid":"b","title":"Lernen","completed":0}]
+2025-04-03 18:53:13 - HINT: "connection established"
+2025-04-03 18:53:13 - HINT: "connection established"
+2025-04-03 18:53:13 - SQL: "DELETE FROM todo WHERE id = :id"
+2025-04-03 18:53:13 - DELETE: {"id":11}
+2025-04-03 18:53:13 - HINT: "connection established"
+2025-04-03 18:53:13 - HINT: "connection established"
+2025-04-03 18:53:13 - SQL: "SELECT * FROM todo"
+2025-04-03 18:53:13 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1}]
+2025-04-03 18:53:19 - HINT: "connection established"
+2025-04-03 18:53:19 - HINT: "connection established"
+2025-04-03 18:53:19 - SQL: "INSERT INTO todo (title, completed) VALUES (:title, :completed)"
+2025-04-03 18:53:19 - HINT: "connection established"
+2025-04-03 18:53:19 - HINT: "connection established"
+2025-04-03 18:53:19 - SQL: "SELECT * FROM todo"
+2025-04-03 18:53:19 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1},{"id":12,"uid":"59b99cb3-0fd0-11f0-87d6-00155d100a0a","title":"vwvw","completed":0}]
+2025-04-03 18:53:21 - HINT: "connection established"
+2025-04-03 18:53:21 - HINT: "connection established"
+2025-04-03 18:53:21 - SQL: "DELETE FROM todo WHERE id = :id"
+2025-04-03 18:53:21 - DELETE: {"id":12}
+2025-04-03 18:53:21 - HINT: "connection established"
+2025-04-03 18:53:21 - HINT: "connection established"
+2025-04-03 18:53:21 - SQL: "SELECT * FROM todo"
+2025-04-03 18:53:21 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1}]
+2025-04-03 18:53:23 - HINT: "connection established"
+2025-04-03 18:53:23 - HINT: "connection established"
+2025-04-03 18:53:23 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 18:53:23 - PUT: {"id":10,"completed":0}
+2025-04-03 18:53:23 - HINT: "connection established"
+2025-04-03 18:53:23 - HINT: "connection established"
+2025-04-03 18:53:23 - SQL: "SELECT * FROM todo"
+2025-04-03 18:53:23 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":0}]
+2025-04-03 18:53:27 - HINT: "connection established"
+2025-04-03 18:53:27 - HINT: "connection established"
+2025-04-03 18:53:27 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 18:53:27 - PUT: {"id":10,"completed":1}
+2025-04-03 18:53:27 - HINT: "connection established"
+2025-04-03 18:53:27 - HINT: "connection established"
+2025-04-03 18:53:27 - SQL: "SELECT * FROM todo"
+2025-04-03 18:53:27 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1}]
+2025-04-03 18:53:33 - HINT: "connection established"
+2025-04-03 18:53:33 - HINT: "connection established"
+2025-04-03 18:53:33 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 18:53:33 - PUT: {"id":8,"completed":1}
+2025-04-03 18:53:33 - HINT: "connection established"
+2025-04-03 18:53:33 - HINT: "connection established"
+2025-04-03 18:53:33 - SQL: "SELECT * FROM todo"
+2025-04-03 18:53:33 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":1},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1}]
+2025-04-03 18:53:36 - HINT: "connection established"
+2025-04-03 18:53:36 - HINT: "connection established"
+2025-04-03 18:53:36 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 18:53:36 - PUT: {"id":8,"completed":0}
+2025-04-03 18:53:36 - HINT: "connection established"
+2025-04-03 18:53:36 - HINT: "connection established"
+2025-04-03 18:53:36 - SQL: "SELECT * FROM todo"
+2025-04-03 18:53:36 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1}]
+2025-04-03 18:53:37 - HINT: "connection established"
+2025-04-03 18:53:37 - HINT: "connection established"
+2025-04-03 18:53:37 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 18:53:37 - PUT: {"id":8,"completed":1}
+2025-04-03 18:53:38 - HINT: "connection established"
+2025-04-03 18:53:38 - HINT: "connection established"
+2025-04-03 18:53:38 - SQL: "SELECT * FROM todo"
+2025-04-03 18:53:38 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":1},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1}]
+2025-04-03 18:53:38 - HINT: "connection established"
+2025-04-03 18:53:38 - HINT: "connection established"
+2025-04-03 18:53:38 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 18:53:38 - PUT: {"id":8,"completed":0}
+2025-04-03 18:53:38 - HINT: "connection established"
+2025-04-03 18:53:38 - HINT: "connection established"
+2025-04-03 18:53:38 - SQL: "SELECT * FROM todo"
+2025-04-03 18:53:38 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1}]
+2025-04-03 18:54:37 - HINT: "connection established"
+2025-04-03 18:54:37 - HINT: "connection established"
+2025-04-03 18:54:37 - SQL: "SELECT * FROM todo"
+2025-04-03 18:54:37 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1}]
+2025-04-03 18:54:40 - HINT: "connection established"
+2025-04-03 18:54:40 - HINT: "connection established"
+2025-04-03 18:54:40 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 18:54:40 - PUT: {"id":8,"completed":1}
+2025-04-03 18:54:40 - HINT: "connection established"
+2025-04-03 18:54:40 - HINT: "connection established"
+2025-04-03 18:54:40 - SQL: "SELECT * FROM todo"
+2025-04-03 18:54:40 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":1},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1}]
+2025-04-03 18:54:41 - HINT: "connection established"
+2025-04-03 18:54:41 - HINT: "connection established"
+2025-04-03 18:54:41 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 18:54:41 - PUT: {"id":8,"completed":0}
+2025-04-03 18:54:41 - HINT: "connection established"
+2025-04-03 18:54:41 - HINT: "connection established"
+2025-04-03 18:54:41 - SQL: "SELECT * FROM todo"
+2025-04-03 18:54:41 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1}]
+2025-04-03 18:54:43 - HINT: "connection established"
+2025-04-03 18:54:43 - HINT: "connection established"
+2025-04-03 18:54:43 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 18:54:43 - PUT: {"id":9,"completed":1}
+2025-04-03 18:54:43 - HINT: "connection established"
+2025-04-03 18:54:43 - HINT: "connection established"
+2025-04-03 18:54:43 - SQL: "SELECT * FROM todo"
+2025-04-03 18:54:43 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":1},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1}]
+2025-04-03 18:54:44 - HINT: "connection established"
+2025-04-03 18:54:44 - HINT: "connection established"
+2025-04-03 18:54:44 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 18:54:44 - PUT: {"id":9,"completed":0}
+2025-04-03 18:54:44 - HINT: "connection established"
+2025-04-03 18:54:44 - HINT: "connection established"
+2025-04-03 18:54:44 - SQL: "SELECT * FROM todo"
+2025-04-03 18:54:44 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":1}]
+2025-04-03 18:54:45 - HINT: "connection established"
+2025-04-03 18:54:45 - HINT: "connection established"
+2025-04-03 18:54:45 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 18:54:45 - PUT: {"id":10,"completed":0}
+2025-04-03 18:54:45 - HINT: "connection established"
+2025-04-03 18:54:45 - HINT: "connection established"
+2025-04-03 18:54:45 - SQL: "SELECT * FROM todo"
+2025-04-03 18:54:45 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":0}]
+2025-04-03 18:56:49 - HINT: "connection established"
+2025-04-03 18:56:49 - HINT: "connection established"
+2025-04-03 18:56:49 - SQL: "SELECT * FROM todo"
+2025-04-03 18:56:49 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":0}]
+2025-04-03 18:59:47 - HINT: "connection established"
+2025-04-03 18:59:47 - HINT: "connection established"
+2025-04-03 18:59:47 - SQL: "SELECT * FROM todo"
+2025-04-03 18:59:47 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":0}]
+2025-04-03 18:59:50 - HINT: "connection established"
+2025-04-03 18:59:50 - HINT: "connection established"
+2025-04-03 18:59:50 - SQL: "SELECT * FROM todo"
+2025-04-03 18:59:50 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":0}]
+2025-04-03 19:00:45 - HINT: "connection established"
+2025-04-03 19:00:45 - HINT: "connection established"
+2025-04-03 19:00:45 - SQL: "UPDATE todo SET title = :title WHERE id = :id"
+2025-04-03 19:00:45 - PUT: {"id":9,"title":"rfr"}
+2025-04-03 19:00:45 - HINT: "connection established"
+2025-04-03 19:00:45 - HINT: "connection established"
+2025-04-03 19:00:45 - SQL: "SELECT * FROM todo"
+2025-04-03 19:00:45 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":0}]
+2025-04-03 19:00:47 - HINT: "connection established"
+2025-04-03 19:00:47 - HINT: "connection established"
+2025-04-03 19:00:47 - SQL: "UPDATE todo SET title = :title WHERE id = :id"
+2025-04-03 19:00:47 - PUT: {"id":9,"title":"rfr"}
+2025-04-03 19:00:47 - HINT: "connection established"
+2025-04-03 19:00:47 - HINT: "connection established"
+2025-04-03 19:00:47 - SQL: "SELECT * FROM todo"
+2025-04-03 19:00:47 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":0}]
+2025-04-03 19:00:48 - HINT: "connection established"
+2025-04-03 19:00:48 - HINT: "connection established"
+2025-04-03 19:00:48 - SQL: "UPDATE todo SET title = :title WHERE id = :id"
+2025-04-03 19:00:48 - PUT: {"id":9,"title":"rfr"}
+2025-04-03 19:00:48 - HINT: "connection established"
+2025-04-03 19:00:48 - HINT: "connection established"
+2025-04-03 19:00:48 - SQL: "SELECT * FROM todo"
+2025-04-03 19:00:48 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":0}]
+2025-04-03 19:00:48 - HINT: "connection established"
+2025-04-03 19:00:48 - HINT: "connection established"
+2025-04-03 19:00:48 - SQL: "UPDATE todo SET title = :title WHERE id = :id"
+2025-04-03 19:00:48 - PUT: {"id":9,"title":"rfr"}
+2025-04-03 19:00:48 - HINT: "connection established"
+2025-04-03 19:00:48 - HINT: "connection established"
+2025-04-03 19:00:48 - SQL: "SELECT * FROM todo"
+2025-04-03 19:00:48 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":0}]
+2025-04-03 19:00:48 - HINT: "connection established"
+2025-04-03 19:00:48 - HINT: "connection established"
+2025-04-03 19:00:48 - SQL: "UPDATE todo SET title = :title WHERE id = :id"
+2025-04-03 19:00:48 - PUT: {"id":9,"title":"rfr"}
+2025-04-03 19:00:48 - HINT: "connection established"
+2025-04-03 19:00:48 - HINT: "connection established"
+2025-04-03 19:00:48 - SQL: "SELECT * FROM todo"
+2025-04-03 19:00:48 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":0}]
+2025-04-03 19:00:49 - HINT: "connection established"
+2025-04-03 19:00:49 - HINT: "connection established"
+2025-04-03 19:00:49 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 19:00:49 - PUT: {"id":9,"completed":1}
+2025-04-03 19:00:49 - HINT: "connection established"
+2025-04-03 19:00:49 - HINT: "connection established"
+2025-04-03 19:00:49 - SQL: "SELECT * FROM todo"
+2025-04-03 19:00:49 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":1},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":0}]
+2025-04-03 19:00:51 - HINT: "connection established"
+2025-04-03 19:00:51 - HINT: "connection established"
+2025-04-03 19:00:51 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 19:00:51 - PUT: {"id":9,"completed":0}
+2025-04-03 19:00:51 - HINT: "connection established"
+2025-04-03 19:00:51 - HINT: "connection established"
+2025-04-03 19:00:51 - SQL: "SELECT * FROM todo"
+2025-04-03 19:00:51 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":0}]
+2025-04-03 19:00:51 - HINT: "connection established"
+2025-04-03 19:00:51 - HINT: "connection established"
+2025-04-03 19:00:51 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 19:00:51 - PUT: {"id":9,"completed":1}
+2025-04-03 19:00:51 - HINT: "connection established"
+2025-04-03 19:00:51 - HINT: "connection established"
+2025-04-03 19:00:51 - SQL: "SELECT * FROM todo"
+2025-04-03 19:00:51 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":1},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":0}]
+2025-04-03 19:00:52 - HINT: "connection established"
+2025-04-03 19:00:52 - HINT: "connection established"
+2025-04-03 19:00:52 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-03 19:00:52 - PUT: {"id":9,"completed":0}
+2025-04-03 19:00:52 - HINT: "connection established"
+2025-04-03 19:00:52 - HINT: "connection established"
+2025-04-03 19:00:52 - SQL: "SELECT * FROM todo"
+2025-04-03 19:00:52 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":9,"uid":"8b3ad250-0fc8-11f0-87d6-00155d100a0a","title":"rfr","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":0}]
+2025-04-03 19:00:53 - HINT: "connection established"
+2025-04-03 19:00:53 - HINT: "connection established"
+2025-04-03 19:00:53 - SQL: "DELETE FROM todo WHERE id = :id"
+2025-04-03 19:00:53 - DELETE: {"id":9}
+2025-04-03 19:00:53 - HINT: "connection established"
+2025-04-03 19:00:53 - HINT: "connection established"
+2025-04-03 19:00:53 - SQL: "SELECT * FROM todo"
+2025-04-03 19:00:53 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":0}]
+2025-04-03 19:01:06 - HINT: "connection established"
+2025-04-03 19:01:06 - HINT: "connection established"
+2025-04-03 19:01:06 - SQL: "UPDATE todo SET title = :title WHERE id = :id"
+2025-04-03 19:01:06 - PUT: {"id":"9","title":"einschlafen"}
+2025-04-03 19:01:06 - HINT: "connection established"
+2025-04-03 19:01:06 - HINT: "connection established"
+2025-04-03 19:01:06 - SQL: "SELECT * FROM todo"
+2025-04-03 19:01:06 - GET: [{"id":7,"uid":"ab","title":"Einkaufen","completed":0},{"id":8,"uid":"a","title":"New","completed":0},{"id":10,"uid":"8e0df58b-0fc8-11f0-87d6-00155d100a0a","title":"rewfre","completed":0}]
