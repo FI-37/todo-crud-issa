@@ -45,17 +45,18 @@ class TodoDB {
             $stmt = $this->connection->prepare($sql);
             $stmt->execute($params);
             return $stmt;
-        } catch(Exception $e) {
+        } catch (Exception $e) {
             error_log($e->getMessage());
+            throw new Exception("Failed to execute statement: " . $e->getMessage());
         }
     }
+    
  
 
     public function getTodos() {
-        $statement = $this->connection->query("SELECT * FROM todo");
-        $todo_items = $statement->fetchAll();
-        return $todo_items;
+        return $this->prepareExecuteStatement("SELECT * FROM todo")->fetchAll();
     }
+    
 
     public function addTodo($title) {
         $this->prepareExecuteStatement(
