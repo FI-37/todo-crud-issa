@@ -1,2 +1,6 @@
 
 log.txt
+config.php
+vendor/
+.phpdocs
+docs
