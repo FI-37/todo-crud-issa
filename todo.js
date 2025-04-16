@@ -106,6 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(() => fetchTodos())
         .catch(error => console.error('Fehler beim Hinzufügen:', error));
     });
+    
 
     document.getElementById('todo-update-form').addEventListener('submit', function(e) {
         e.preventDefault();

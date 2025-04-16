@@ -618,3 +618,85 @@
 2025-04-04 08:19:18 - HINT: "connection established"
 2025-04-04 08:19:18 - SQL: "SELECT * FROM todo"
 2025-04-04 08:19:18 - GET: []
+2025-04-10 06:36:53 - HINT: "connection established"
+2025-04-10 06:36:53 - HINT: "connection established"
+2025-04-10 06:36:53 - SQL: "SELECT * FROM todo"
+2025-04-10 06:36:53 - GET: []
+2025-04-10 06:36:59 - HINT: "connection established"
+2025-04-10 06:36:59 - HINT: "connection established"
+2025-04-10 06:36:59 - SQL: "INSERT INTO todo (title, completed) VALUES (:title, :completed)"
+2025-04-10 06:36:59 - HINT: "connection established"
+2025-04-10 06:36:59 - HINT: "connection established"
+2025-04-10 06:36:59 - SQL: "SELECT * FROM todo"
+2025-04-10 06:36:59 - GET: [{"id":20,"uid":"2b6d3451-1488-11f0-8b8d-00155d100a0a","title":"eded","completed":0}]
+2025-04-10 06:37:01 - HINT: "connection established"
+2025-04-10 06:37:01 - HINT: "connection established"
+2025-04-10 06:37:01 - SQL: "DELETE FROM todo WHERE id = :id"
+2025-04-10 06:37:01 - DELETE: {"id":20}
+2025-04-10 06:37:01 - HINT: "connection established"
+2025-04-10 06:37:01 - HINT: "connection established"
+2025-04-10 06:37:01 - SQL: "SELECT * FROM todo"
+2025-04-10 06:37:01 - GET: []
+2025-04-15 08:24:48 - HINT: "connection established"
+2025-04-15 08:24:48 - HINT: "connection established"
+2025-04-15 08:24:48 - SQL: "SELECT * FROM todo"
+2025-04-15 08:24:48 - GET: []
+2025-04-15 09:07:29 - HINT: "connection established"
+2025-04-15 09:07:29 - HINT: "connection established"
+2025-04-15 09:07:29 - SQL: "SELECT * FROM todo"
+2025-04-15 09:07:29 - GET: []
+2025-04-15 09:07:33 - HINT: "connection established"
+2025-04-15 09:07:33 - HINT: "connection established"
+2025-04-15 09:07:33 - SQL: "INSERT INTO todo (title, completed) VALUES (:title, :completed)"
+2025-04-15 09:07:33 - HINT: "connection established"
+2025-04-15 09:07:33 - HINT: "connection established"
+2025-04-15 09:07:33 - SQL: "SELECT * FROM todo"
+2025-04-15 09:07:33 - GET: [{"id":21,"uid":"ad5f352b-1529-11f0-8b8d-00155d100a0a","title":"sef","completed":0}]
+2025-04-15 09:07:36 - HINT: "connection established"
+2025-04-15 09:07:36 - HINT: "connection established"
+2025-04-15 09:07:36 - SQL: "UPDATE todo SET title = :title WHERE id = :id"
+2025-04-15 09:07:36 - PUT: {"id":21,"title":"sef"}
+2025-04-15 09:07:36 - HINT: "connection established"
+2025-04-15 09:07:36 - HINT: "connection established"
+2025-04-15 09:07:36 - SQL: "SELECT * FROM todo"
+2025-04-15 09:07:36 - GET: [{"id":21,"uid":"ad5f352b-1529-11f0-8b8d-00155d100a0a","title":"sef","completed":0}]
+2025-04-15 12:49:53 - HINT: "connection established"
+2025-04-15 12:49:53 - HINT: "connection established"
+2025-04-15 12:49:53 - SQL: "SELECT * FROM todo"
+2025-04-15 12:49:53 - GET: [{"id":21,"uid":"ad5f352b-1529-11f0-8b8d-00155d100a0a","title":"sef","completed":0}]
+2025-04-15 12:50:04 - HINT: "connection established"
+2025-04-15 12:50:04 - HINT: "connection established"
+2025-04-15 12:50:04 - SQL: "UPDATE todo SET title = :title WHERE id = :id"
+2025-04-15 12:50:04 - PUT: {"id":21,"title":"sef"}
+2025-04-15 12:50:04 - HINT: "connection established"
+2025-04-15 12:50:04 - HINT: "connection established"
+2025-04-15 12:50:04 - SQL: "SELECT * FROM todo"
+2025-04-15 12:50:04 - GET: [{"id":21,"uid":"ad5f352b-1529-11f0-8b8d-00155d100a0a","title":"sef","completed":0}]
+2025-04-15 12:50:07 - HINT: "connection established"
+2025-04-15 12:50:07 - HINT: "connection established"
+2025-04-15 12:50:07 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-15 12:50:07 - PUT: {"id":21,"completed":1}
+2025-04-15 12:50:07 - HINT: "connection established"
+2025-04-15 12:50:07 - HINT: "connection established"
+2025-04-15 12:50:07 - SQL: "SELECT * FROM todo"
+2025-04-15 12:50:07 - GET: [{"id":21,"uid":"ad5f352b-1529-11f0-8b8d-00155d100a0a","title":"sef","completed":1}]
+2025-04-15 12:50:09 - HINT: "connection established"
+2025-04-15 12:50:09 - HINT: "connection established"
+2025-04-15 12:50:09 - SQL: "UPDATE todo SET completed = :completed WHERE id = :id"
+2025-04-15 12:50:09 - PUT: {"id":21,"completed":0}
+2025-04-15 12:50:09 - HINT: "connection established"
+2025-04-15 12:50:09 - HINT: "connection established"
+2025-04-15 12:50:09 - SQL: "SELECT * FROM todo"
+2025-04-15 12:50:09 - GET: [{"id":21,"uid":"ad5f352b-1529-11f0-8b8d-00155d100a0a","title":"sef","completed":0}]
+2025-04-15 12:50:11 - HINT: "connection established"
+2025-04-15 12:50:11 - HINT: "connection established"
+2025-04-15 12:50:11 - SQL: "DELETE FROM todo WHERE id = :id"
+2025-04-15 12:50:11 - DELETE: {"id":21}
+2025-04-15 12:50:11 - HINT: "connection established"
+2025-04-15 12:50:11 - HINT: "connection established"
+2025-04-15 12:50:11 - SQL: "SELECT * FROM todo"
+2025-04-15 12:50:11 - GET: []
+2025-04-15 23:04:27 - HINT: "connection established"
+2025-04-15 23:04:27 - HINT: "connection established"
+2025-04-15 23:04:27 - SQL: "SELECT * FROM todo"
+2025-04-15 23:04:27 - GET: []
